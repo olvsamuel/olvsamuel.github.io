@@ -27,10 +27,31 @@ blockquote{
     width: 40px;
 }
 
+.icontexto{
+    height: 20px;
+    width: 20px;
+}
+
 .upupl{
     justify-content: center;
     position: relative;
     height: 50%;
     line-height: 50%;
     border-bottom: #757575;
+}
+
+.tags{
+    font-weight: 600;
+    color: #000000;
+}
+
+.btn-voltar{
+    color: white;
+    background-color: #757575;
+}
+
+.btn-voltar:hover{
+    background-color: white;
+    color: black;
+    border-color: black;
 }
