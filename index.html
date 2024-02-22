@@ -2,182 +2,111 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <title>Home - Samuel de Oliveira</title>
-    <meta name="Meu Site" content="Site pessoal, feito em HTML5, CSS3, JS e Materialize">
-    <meta name="author" content="Samuel de Oliveira">
-    <meta name="keywords" content="HTML5, CSS3, JS, Materialize">
-    <!--My icon-->
-    <link rel="shortcut icon" href="img/icon-myweb.png">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection" />
-
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script>
-        function teste() {
-            $(document).ready(function() {
-                $.ajax({
-                    url: 'https://swapi.dev/api/planets/'
-                }).done(function(data) {
-                    if (console && console.log) {
-                        console.log(data.results[3])
-                    }
-                });
-            });
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel de Oliveira</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
-        
-    </script>
+
+        nav {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-item {
+            margin: 0 3.5%;
+            list-style-type: none;
+        }
+
+        nav a:hover {
+            background-color: #f0f0f0; /* Muda a cor de fundo ao passar o mouse */
+        }
+
+        nav a::after {
+            content: '';
+            width: 0;
+            height: 2px;
+            background-color: #333;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .container {
+            width: 80%;
+            /* Alterado para 80% da largura da tela */
+            border: 2px solid #333;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 80%;
+            /* Limita a largura máxima da div */
+            height: 80vh;
+            /* Alterado para 80% da altura da tela */
+            max-height: 80%;
+            /* Limita a altura máxima da div */
+            overflow: auto;
+            /* Adiciona barra de rolagem se o conteúdo exceder a altura da div */
+        }
+
+        .profile-image {
+            float: right;
+            margin-left: 20px;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar-fixed">
-        <nav class="grey darken-4">
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo center"><i class="material-icons">code</i>olvsamuel</a>
-            </div>
-        </nav>
-    </div>
-    <br>
+    <nav>
+        <li class="nav-item">
+            <a href=" #">bio</a>
+        </li>
+        <li class="nav-item">
+            <a href=" #">portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a href=" #">podcast</a>
+        </li>
+        <li class="nav-item">
+            <a href=" #">blog</a>
+        </li>
+    </nav>
     <div class="container">
-        <blockquote> Seja bem-vindo(a) ao meu site. </blockquote>
-        <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <div class="card-panel grey lighten-5 z-depth-1">
-                <div class="row valign-wrapper">
-                    <div class="col s2">
-                        <img src="https://avatars.githubusercontent.com/u/38445830?v=4" alt="" class="circle responsive-img center">
-                    </div>
-                    <div class="col s8">
-                        <p class="subtitulo">Me chamo Samuel de Oliveira!</p>
-                        <p class="upl"> Paulista, estudante, músico, desenvolver e quase Professor.</p>
-                        <p> Formado em Análise e Desenvolvimento de Sistemas<br>
-                            Graduando Bacharelado em Matemática <br>
-                            Pós-graduando Docência na Educação Profissional e Superior e <br> MBA em Segurança da Informação. <br>
-
-                        </p>
-
-                        <!-- <p><a onclick="teste()">Tutorial HTML5</a></p> -->
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!--*************************-->
-
-        <div class="section">
-
-            <div class="row">
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/programming.jpg">
-                            <span class="card-title"><i class="material-icons">code</i> Programação</span>
-                        </div>
-                        <div class="card-content">
-                            <p class="center">
-                                <span class="upl">Desenvolvimento</span>
-                                <br>
-                                <hr>
-                                Tenho experiência em desenvolvimento com: <br>
-                                <!-- <span class="upl">Mobile:</span> Java e Kotlin. -->
-                                <br>
-                                NodeJS, Javascript, Typescript e PHP.
-                                <br>
-                                Integrações com APIs de pagamento. 
-                                <br>
-                                SQL (MySQL e SQL Server) e NoSQL (MongoDB).
-                                <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/math.jpg">
-                            <span class="card-title"><i class="material-icons">library_books</i> Matemática</span>
-                        </div>
-                        <div class="card-content">
-                            <p class="center">
-                                <span class="upl">Lógica</span>
-                                <br>
-                                <hr>
-                                Acabei obtendo gosto pela matemática desde a época do ensino médio.
-                                <br><br>
-                                Curso Bacharelado em Matemática buscando adquirir mais conhecimento sobre essa ciência.
-                                <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12 m4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="img/music3.jpg">
-                            <span class="card-title"><i class="material-icons">audiotrack</i> Música</span>
-                        </div>
-                        <div class="card-content">
-                            <p class="center">
-                                <span class="upl">Sentimento</span>
-                                <br>
-                                <hr>
-                                Comecei aprendendo violão com 13 anos de idade e, desde então, não parei.
-                                <br>
-                                Minhas influências musicais são:
-                                Pink Floyd, Guns N' Roses, Red Hot Chili Peppers, entre outros.
-                                <br>
-                                Toco Violão, Guitarra, Ukulele e Contrabaixo.
-                                <br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <br><br>
-
+        <img src="https://avatars.githubusercontent.com/u/38445830?v=4" alt="Profile Image" class="profile-image">
+        <h1>Seu conteúdo centralizado aqui</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed nisi sed metus finibus lacinia.</p>
     </div>
-    <footer class="page-footer grey darken-3">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Contato</h5>
-                    <p class="grey-text text-lighten-4">E-mail: olvsamuel.edu@gmail.com</p>
-
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Redes Sociais</h5>
-                    <ul>
-                        <li>
-                            <a class="grey-text text-lighten-3" target="_blank" href="https://facebook.com/pecesamuel"><img
-                                    class="icon" src="img/icon-fb.png"></a>
-                            <a class="grey-text text-lighten-3" target="_blank" href="https://github.com/olvsamuel"><img
-                                    class="icon" src="img/icon-git.png"></a>
-                            <a class="grey-text text-lighten-3" target="_blank" href="https://www.linkedin.com/in/olvsamuel/"><img
-                                    class="icon" src="img/icon-linkedin.png"></a>
-                            <a class="grey-text text-lighten-3" target="_blank" href="https://instagram.com/pc_samuel/"><img
-                                    class="icon" src="img/icon-insta.png"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright grey darken-4">
-            <div class="container center">
-                © 2018 Samuel de Oliveira
-            </div>
-        </div>
-    </footer>
-    <script src="assets/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="assets/js/init.js"></script>
 </body>
 
 </html>
