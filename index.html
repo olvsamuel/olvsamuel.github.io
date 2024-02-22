@@ -5,107 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel de Oliveira</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
 
-        nav {
-            width: 80%;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            margin: 0 10px;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .nav-item {
-            margin: 0 3.5%;
-            list-style-type: none;
-        }
-
-        nav a:hover {
-            background-color: #f0f0f0; /* Muda a cor de fundo ao passar o mouse */
-        }
-
-        nav a::after {
-            content: '';
-            width: 0;
-            height: 2px;
-            background-color: #333;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            transition: width 0.3s;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        .container {
-            width: 80%;
-            /* Alterado para 80% da largura da tela */
-            border: 2px solid #333;
-            padding: 20px;
-            box-sizing: border-box;
-            max-width: 80%;
-            /* Limita a largura máxima da div */
-            height: 80vh;
-            /* Alterado para 80% da altura da tela */
-            max-height: 80%;
-            /* Limita a altura máxima da div */
-            overflow: auto;
-            /* Adiciona barra de rolagem se o conteúdo exceder a altura da div */
-        }
-
-        .profile-image {
-            float: right;
-            margin-left: 20px;
-            max-width: 300px;
-            height: auto;
-        }
-
-        .buttons {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
     <nav>
         <li class="nav-item">
-            <a href=" #">bio</a>
+            <h3><a href="index.html">BIO</a></h3>
         </li>
         <li class="nav-item">
-            <a href=" #">portfolio</a>
+            <h3><a href="https://github.com/olvsamuel" target="_blank">GITHUB</a></h3>
         </li>
         <li class="nav-item">
-            <a href=" #">podcast</a>
+            <h3><a href="https://podcasters.spotify.com/pod/show/nao-sei-tudo" target="_blank">PODCAST</a></h3>
         </li>
         <li class="nav-item">
-            <a href=" #">blog</a>
+            <h3><a href="https://www.youtube.com/@PCSamuel" target="_blank">YOUTUBE</a></h3>
         </li>
     </nav>
     <div class="container">
         <img src="https://avatars.githubusercontent.com/u/38445830?v=4" alt="Profile Image" class="profile-image">
-        <h1>Seu conteúdo centralizado aqui</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed nisi sed metus finibus lacinia.</p>
+
+        <h1>Samuel de Oliveira</h1>
+        <p>
+            Sou desenvolvedor de software, músico e professor.
+            <br>
+            Paulista, mas localizado em Porto Alegre, Rio Grande do Sul
+            <br><br>
+            Formado em Análise e Desenvolvimento de Sistemas
+            <br>
+            Pós-Graduado em Docência e Prática do Ensino em Matemática
+            <br>
+            Pós-Graduado em MBA em Segurança da Informação
+            <br><br>
+            Trabalho há alguns anos com desenvolvimento backend de sistemas
+            <br>
+            criando e implementando APIs e estruturando banco de dados.
+            <br>
+            Tenho experiencia em desenvolvimento com: C# dotnet core, JS nodejs,
+            <br>
+            MSSQL Server, Redis, Docker, Nginx, AWS, etc.
+        </p>
+        
+        <div class="paragrafo-canto-baixo">
+            <a href="https://linkr.bio/80p93o" target="_blank" class="decoracao-link">
+                <p>@pece_samuel</p>
+            </a>
+            <a href="https://www.facebook.com/pecesamuel" target="_blank"><img src="./assets/img/fb.png" alt="facebook"
+                    class="socials-image"></a>
+            <a href="https://x.com/pece_samuel" target="_blank"><img src="./assets/img/x.png" alt="twitter"
+                    class="socials-image"></a>
+            <a href="https://www.linkedin.com/in/olvsamuel" target="_blank"><img src="./assets/img/linkedin.png"
+                    alt="linkedin" class="socials-image"></a>
+            <a href="https://github.com/olvsamuel" target="_blank"><img src="./assets/img/git.png" alt="github"
+                    class="socials-image"></a>
+        </div>
+
     </div>
 </body>
 
